@@ -51,3 +51,40 @@ let myFunction = function(){
  console.log(typeof myObj);
  console.log(typeof myFunction);
 //Return type of array & objects is OBJECT and function is function(object function )
+
+
+
+///////////////////
+//Type of Memory
+//Stack (Primitive) and Heap (Non-Primitive)
+// In stack memory we get the copy of variable   and
+// in heap memory we get reference of orginal value
+
+// Call by value means if we declare to variable like
+
+let myYoutubeName ="farhan.com" ;
+let anotherName = myYoutubeName;
+anotherName ="Shahran.com";
+
+console.log(myYoutubeName)
+console.log(anotherName);
+ //in op thevalue of myYoutubeName is not change at all bcoz it is on primitive type and store in stack memory
+
+
+ //Heap memory example
+
+ let user1={
+    email : "sdad1222@.com",
+    age: 18,
+ }
+ let user2=user1;
+
+ user2.email = "ddddd@gamil.com";
+
+ console.log(user1);
+ console.log(user2);
+
+ //both user will have same value which is modified earliest which is known as call by reference that means the reference is get modify if if changing happened
+ 
+
+
